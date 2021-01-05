@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.ico">
+	<link rel="stylesheet" href="../css/login.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+		
+	<link rel="stylesheet" href="themes/web.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4..5/jquery.mobile-1.4.5.min.js"></script>
+	
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="../js/signup.js"></script>
+	
+	
+	<title>Form Validation in jQuery</title>	
+	</head>
+
+	<body class = "signup" onload="securityQuestion()">			
+		<div class="signupform">
+			<img src="../images/usericon.jpg">
+
+			<h1>Create an Account</h1>
+			<div class = "input">
+				<form id="registration_form" action="login.html" method="post">
+					<input type="text" id="form_username" class="input-box" name="form_username" placeholder="Username"><br><span class="error_form" id="username_error_message"></span>
+					<input type="text" type="password" id="form_password" class="input-box" name="form_password" placeholder="Password"><br><span class="error_form" id="password_error_message"></span>
+					<input type="text" type="password" id="form_retype_password" class="input-box" name="form_retype_password" placeholder="ReType Password"><br><span class="error_form" id="retype_password_error_message"></span>
+					<input type="text" id="form_firstname" class="input-box" name="form_firstname" placeholder="FirstName"><br><span class="error_form" id="firstname_error_message"></span>
+					<input type="text" id="form_lastname" class="input-box" name="form_lastname" placeholder="LastName"><br><span class="error_form" id="lastname_error_message"></span>
+					<input type="text" id="form_email" class="input-box" name="form_email" placeholder="Email"><br><span class="error_form" id="email_error_message"></span>
+					<select class="input-box" id="user_gender" name="user_gender">
+						<option value="" selected="selected">Gender (Optional)</option>
+						<option value="1">Male</option>
+						<option value="2">Female</option>
+						<option value="3">Don't want to say</option>
+					</select>
+					<input type="text" id="form_security" class="input-box" name="form_security" placeholder=""><br><span class="error_form" id="security_error_message"></span>
+					<p><input type="checkbox" name="form_agree" value="true" class ="form_text" id ="form_agree"> I am not Robot</p>
+					<button type="submit" class="sign_sbmt_btn" >Create Account</button>
+				</form>	
+			</div>
+	</div>
+	</body>
+</html>
